@@ -47,7 +47,7 @@ jobs:
       - name: Update feeds
         run: |
           git clone packages https://github.com/kenzok8/openwrt-packages.git
-          sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
+#         sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
